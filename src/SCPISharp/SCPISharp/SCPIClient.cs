@@ -17,6 +17,27 @@ namespace AndreasReitberger.SCPI
         public static bool IsInitialized => _port?.IsOpen == true;
 
         #endregion
+
+        #region Ctor 
+        /// <summary>Initializes a new instance of the <see cref="Toellner"/> class.</summary>
+        /// <param name="serialPortName">The serialPortName-Port (for instance "COM1").</param>
+        /// <param name="baudrate">The baudrate (for instance 9600).</param>
+        public SCPIClient(string serialPortName, int baudrate)
+        {
+            Init(serialPortName, baudrate);
+        }
+        /// <summary>Initializes a new instance of the <see cref="Toellner"/> class.</summary>
+        /// <param name="serialPortName">The serialPortName-Port (for instance "COM1").</param>
+        /// <param name="baudrate">The baudrate (for instance 9600).</param>
+        /// <param name="parity">The parity bit(s).</param>
+        /// <param name="dataBits">The data bits.</param>
+        /// <param name="stopBits">The stop bit(s).</param>
+        public SCPIClient(string serialPortName, int baudrate, Parity parity, int dataBits, StopBits stopBits)
+        {
+            Init(serialPortName, baudrate, parity, dataBits, stopBits);
+        }
+        #endregion
+
         #region Public Static Methods
         /// <summary>  Availables serialPortName ports.</summary>
         /// <returns>Returns all available serialPortName Ports</returns>
