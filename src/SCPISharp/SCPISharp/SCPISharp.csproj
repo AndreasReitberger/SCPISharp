@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>AndreasReitberger.SCPI</RootNamespace>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>SCPISharp</Title>
+    <Authors>Andreas Reitberger</Authors>
+    <Company>Andreas Reitberger</Company>
+    <Copyright>Andreas Reitberger</Copyright>
+    <PackageProjectUrl>https://github.com/AndreasReitberger/SCPISharp</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/AndreasReitberger/SCPISharp</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>SCPI, Sharp, Library, Toellner, Power, Supply, Command</PackageTags>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CommunityToolkit.Mvvm" Version="8.3.2" />
+    <PackageReference Include="System.IO.Ports" Version="8.0.0" />
+  </ItemGroup>
+
+</Project>
